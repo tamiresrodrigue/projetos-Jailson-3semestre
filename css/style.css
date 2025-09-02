@@ -1,0 +1,38 @@
+
+/*1. RESERT GLOBAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+bady{
+    font-family: 'Lato' , sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. O COMPONENTE DO POST - O FOCO DO NOSSO ESTUO*/
+
+.post-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/*4. ESTILZAÇÃO DOS ELEMENTOS FILHOS DO CSS FLEBOX*/
+
+.post-image{
+    width: 200px;
+    height: 200px;
+}
