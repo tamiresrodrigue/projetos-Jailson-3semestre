@@ -1,12 +1,13 @@
 
-/*1. RESERT GLOBAL*/
+/*1. RESET GLOBAL*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-direction: row-reverse;
 }
 
-bady{
+body{
     font-family: 'Lato' , sans-serif;
     background-color: #f0f4f8;
     display: flex;
@@ -23,11 +24,13 @@ bady{
     align-items: center;
     gap: 20px;
     width: 100%;
-    max-width: 700px;
-    background-color: #fff;
+    background-color: #85ccd2;
+    background: #fff;
     border-radius: 14px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
     overflow: hidden;
+     max-width: 700px;
+
 }
 
 /*4. ESTILZAÇÃO DOS ELEMENTOS FILHOS DO CSS FLEBOX*/
@@ -35,4 +38,27 @@ bady{
 .post-image{
     width: 200px;
     height: 200px;
+    object-fit: cover;
+}
+
+.post-content{
+    padding: 20px;
+}
+
+.post-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.post-exerpt{
+    margin-bottom: 0;
+    color: #718096;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 500px) {
+   .post-card {
+    flex-direction: column;
+   } 
 }
